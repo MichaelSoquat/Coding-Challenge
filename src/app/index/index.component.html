@@ -1,0 +1,21 @@
+<div class="design">
+    <h1 class="headline">BUNDESLÄNDER</h1>
+    <div *ngIf="filteredBundeslaender.length == 0" class="content">
+        <div class="land-box" *ngFor="let land of bundeslaender; let i = index">
+            <a class="links" href="{{land.url}}">
+                <div class="inner-land-box"><span>{{land.name}}</span><span class="color-grey">{{land.population}}Millionen</span></div>
+            </a>
+        </div>
+    </div>
+    <div *ngIf="filteredBundeslaender.length > 0" class="content">
+        <div class="land-box" *ngFor="let land of filteredBundeslaender; let i = index">
+            <a class="links" href="{{land.url}}">
+                <div class="inner-land-box"><span>{{land.name}}</span><span class="color-grey">{{land.population}}Millionen</span></div>
+            </a>
+        </div>
+    </div>
+    <div class="letters">
+        <div (click)="filterLandOfLetter(letter)" class="letter" *ngFor="let letter of letters; let i = index;">{{letter}}</div>
+        <div (click)="showAllAgain()" class="letter">*</div>
+    </div>
+</div>

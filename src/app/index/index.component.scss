@@ -1,0 +1,64 @@
+.design {
+    max-width: 1024px;
+    width: 1024px;
+}
+
+.headline {
+    background-color: grey;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.content {
+    min-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.land-box {
+    width: 33.3333%;
+    padding: 5px;
+}
+
+.inner-land-box {
+    border: 10px solid grey;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.inner-land-box:hover {
+    background-color: rgba(0, 0, 0, 0.1)
+}
+
+.color-grey {
+    color: lightslategrey;
+    padding-top: 10px;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+}
+
+.letters {
+    display: flex;
+}
+
+.letter {
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.letter:hover {
+    cursor: pointer;
+}
